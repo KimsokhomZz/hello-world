@@ -8,17 +8,19 @@
 <body>
 
     <h1>This is Testing</h1>
+    <p id="demo"></p>
     <script>
-        // This will run before the page has finished loading
-        document.write("This is written before the page is fully loaded.");
-      </script>
+      document.getElementById("demo").innerHTML = "Date: " + Date();
+      // This will run before the page has finished 
+      document.write("Hello Me!" + "<br>");
+      document.write("This is written before the page is fully loaded.");
+    </script>
     
-      <script>
-        window.onload = function() {
-          // This will run after the page has finished loading
-          alert("Page has finished loading!");
-        };
-      </script>
+    <!-- <script>
+      window.onload = function() {          // This will run after the page has finished loading
+        alert("Page has finished loading!");
+      };
+    </script> -->
 
 </body>
 </html>
